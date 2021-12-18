@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "f888a2c4-c862-474e-b566-caf5afcd53c7",
+		"name": "doytest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "CS GO"
+						},
+						{
+							"key": "year",
+							"value": "2006",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Шутер, кооп",
+							"type": "text"
+						},
+						{
+							"key": "developer",
+							"value": "VALVe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{server}}/add",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get/{task_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/get/1",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "34553848-f398-471f-ada0-ba525ab552a7",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "8f51116e-e7df-4aa7-a088-ee6b00e4ad32",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "43fdb2c8-9208-4c7f-ace4-51d37c8bde37",
+			"key": "server",
+			"value": "http://localhost"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
