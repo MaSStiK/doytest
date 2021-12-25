@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f888a2c4-c862-474e-b566-caf5afcd53c7",
+		"_postman_id": "7c5f8c48-bb9b-495e-b9dd-49db645ff89e",
 		"name": "doytest",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -52,13 +52,90 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{server}}/get/1",
+					"raw": "{{server}}/get/3",
 					"host": [
 						"{{server}}"
 					],
 					"path": [
 						"get",
-						"1"
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit/{task_id}",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "WOW"
+						},
+						{
+							"key": "year",
+							"value": "2006",
+							"type": "text"
+						},
+						{
+							"key": "genre",
+							"value": "Шутер, кооп",
+							"type": "text"
+						},
+						{
+							"key": "developer",
+							"value": "VALVe",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{server}}/edit/3",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"edit",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete/{task_id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/delete/3",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"delete",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "showAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server}}/showAll",
+					"host": [
+						"{{server}}"
+					],
+					"path": [
+						"showAll"
 					]
 				}
 			},
@@ -69,7 +146,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "34553848-f398-471f-ada0-ba525ab552a7",
+				"id": "5ca7ee38-0c0e-435a-9532-3f86d39dac7e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -79,7 +156,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "8f51116e-e7df-4aa7-a088-ee6b00e4ad32",
+				"id": "b96bcd43-f43d-452d-a1bd-7d16dae5f866",
 				"type": "text/javascript",
 				"exec": [
 					""
